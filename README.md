@@ -11,7 +11,7 @@ Instructions:
 Below a new feature is outlined. A minimal app has been step to help bootstrap development. You may choose to use these existing packages or add any frameworks that you wish to complete the test.
 
 Fertilizer Product Test:
-Build a single page app the displays a list of fertilizer products where a user might be able to see a list of products that they might want to buy. Sample data is located in /src/server/sample.json. 
+Update the app to display a list of fertilizer products where a user might be able to see a list of products that they might want to buy. Sample data is located in /src/server/sample.json. 
 Each row may be clicked, which will open up a product in a new model/dialog and display some information about the product. The dialog should have a button to order that product. Pressing the button should decrease the quantity. If there is no product left, the button should be disabled. 
 
 References: 
