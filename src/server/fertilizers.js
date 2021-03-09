@@ -1,4 +1,4 @@
-const { readFile, writeFile } = require('./dataAccess');
+const { readFile, writeFile } = require('./db/dataAccess');
 
 // Returns a list of fertilizers from the db.json file
 const getFertilizers = (req, res) => {

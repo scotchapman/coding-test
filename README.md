@@ -1,6 +1,6 @@
 Coding Exercise 
 
-This repo is a very basic setup for a node full stack web application. It has been bootstrapped with create-react-app and material-ui for the client-side js library. A simple api server with express.js that reads a static json file is also setup.
+This repo is a very basic setup for a node full stack web application. It has been bootstrapped with create-react-app and material-ui for the client-side js library. A simple api server with express.js that reads a static json file is also setup. View `./sample.json ` to see what the data structures looks like. 
 
 Fertilizer App: 
 The application renders a list of 10 fertilizer products that a customer could order. On render the products list is loaded via an API call and render on the page. There is an "Order" button on each row that sends a request to the api and decreases the quantity of that product.
