@@ -11,7 +11,7 @@
   },
   {
     "id": "0002",
-    "name": "BAT GUANO",
+    "name": "EXTRACT ",
     "nutrients": {
       "N": 0.08,
       "P": 0.06,
@@ -21,7 +21,7 @@
   },
   {
     "id": "0003",
-    "name": "FISH EMULSION",
+    "name": "RISER",
     "nutrients": {
       "N": 0.09,
       "P": 0,
@@ -47,21 +47,21 @@
       "P": 0.005,
       "K": 0.01
     },
-    "quantity": 1
+    "quantity": 0
   },
   {
     "id": "0006",
-    "name": "FISH EMULSION",
+    "name": "BLACK LABEL ZN",
     "nutrients": {
       "N": 9,
       "P": 0,
       "K": 0
     },
-    "quantity": 126
+    "quantity": 124
   },
   {
     "id": "0007",
-    "name": "SEAWEED",
+    "name": "CHOICE® TRIO",
     "nutrients": {
       "N": 0.01,
       "P": 0.02,
@@ -71,7 +71,7 @@
   },
   {
     "id": "0008",
-    "name": "FISH EMULSION",
+    "name": "LIBERATE",
     "nutrients": {
       "N": 9,
       "P": 0,

@@ -1,6 +1,6 @@
-Coding exercise 
+Coding Exercise 
 
-This repo is a very basic setup for a node full stack web application. It has been bootstrapped with create-react-app and material-ui for the client-side js library. A simple api server with express.js that reads a staic json file is also setup.
+This repo is a very basic setup for a node full stack web application. It has been bootstrapped with create-react-app and material-ui for the client-side js library. A simple api server with express.js that reads a static json file is also setup.
 
 To start the app: 
 1. `yarn` to install all dependencies
@@ -10,9 +10,9 @@ To start the app:
 Instructions: 
 Below a new feature is outlined. A minimal app has been step to help bootstrap development. You may choose to use these existing packages or add any frameworks that you wish to complete the test.
 
-Fertilizer Product Test:
+Fertilizer Product Feature:
 Update the app to display a list of fertilizer products where a user might be able to see a list of products that they might want to buy. Sample data is located in /src/server/sample.json. 
-Each row may be clicked, which will open up a product in a new model/dialog and display some information about the product. The dialog should have a button to order that product. Pressing the button should decrease the quantity. If there is no product left, the button should be disabled. 
+Each row may be clicked, which will open up a product in a new model/dialog and display display nutrient analysis (the N-P-K values) for the product. The dialog should have a button to order that product. Pressing the button should decrease the quantity. If there is no product left, the button should be disabled. 
 
 References: 
 create-react-app: https://github.com/facebook/create-react-app
