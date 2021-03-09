@@ -20,7 +20,7 @@ In the app each line item has an "Order" button. Onclick of the button, the api 
 The update endpoint currently allows a user to decrease the quantity below 0. Add some code to the api that stops users from ordering more than the quantity. If the user tries to order and the quantity is 0 a message should be returned. 
 
 References: 
-create-react-app: https://github.com/facebook/create-react-app
-Material-ui: https://github.com/mui-org/material-ui
-Express: https://github.com/expressjs/express
-Axios: https://github.com/axios/axios
+- create-react-app: https://github.com/facebook/create-react-app
+- Material-ui: https://github.com/mui-org/material-ui
+- Express: https://github.com/expressjs/express
+- Axios: https://github.com/axios/axios
