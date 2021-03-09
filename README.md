@@ -14,9 +14,9 @@ Instructions:
 Below are 2 new features outlined. Please choose one to implement. 
 
 1. Update product table after a successful api call to order endpoint. 
-In the app each line item has an "Order" button on click the api is called and the quantity is decreased. Update the UI table so that it updates with the new product quantity after a successful api call. 
+In the app each line item has an "Order" button. Onclick of the button, the api is called and the quantity is decreased. Update the UI table so that it updates with the new product quantity after a successful api call. 
 
-2. Update the order endpoint
+2. Update the order endpoint with quantity limit
 The update endpoint currently allows a user to decrease the quantity below 0. Add some code to the api that stops users from ordering more than the quantity. If the user tries to order and the quantity is 0 a message should be returned. 
 
 References: 
