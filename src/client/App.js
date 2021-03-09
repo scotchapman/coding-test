@@ -7,8 +7,10 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button'; 
 
-import apiClient from './apiClient';
+import orderFertilizers from './api/orderFertilizers';
+import getFertilizers from './api/getFertilizers';
 
 const useStyles = makeStyles({
   table: {
@@ -22,19 +24,14 @@ export default function FertilizerTable() {
 
   useEffect(() => {
     async function fetchMyAPI() {
-      let response = await apiClient.get('/fertilizers');
-      setState(response.data)
+      let response = await getFertilizers()
+      setState(response)
     }
     fetchMyAPI()
   },[])
 
   const handleOrderClick = (id) => {
-    async function fetchMyAPI() {
-      await apiClient.post('/fertilizers/order', {
-        id: id,
-      });
-    }
-    fetchMyAPI();
+    orderFertilizers(id);
   }
 
   return (
@@ -60,7 +57,9 @@ export default function FertilizerTable() {
               <TableCell align="right">{row.nutrients.P}</TableCell>
               <TableCell align="right">{row.nutrients.K}</TableCell>
               <TableCell align="right">{row.quantity}</TableCell>
-              <TableCell align="right" onClick={() => handleOrderClick(row.id)}>Order</TableCell>
+              <TableCell align="right">
+                <Button variant="contained" onClick={() => handleOrderClick(row.id)}>Order</Button>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
