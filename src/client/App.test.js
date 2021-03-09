@@ -23,6 +23,6 @@ test('renders products table', async () => {
   const tableHeader = screen.getByText(/Product Name/i);
   expect(tableHeader).toBeInTheDocument();
 
-  const productname = await screen.findByText(mockList[0].name)
-  expect(productname).toBeInTheDocument();
+  const productName = await screen.findByText(mockList[0].name)
+  expect(productName).toBeInTheDocument();
 });
