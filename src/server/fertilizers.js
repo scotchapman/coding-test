@@ -10,15 +10,17 @@ const getFertilizers = (req, res) => {
 const orderFertilizer = (req, res) => { 
   let fertilizers = readFile();
 
+  let newQuantity;
   const modified = fertilizers.map((fertilizer) => {
     if (req.body.id === fertilizer.id) {
-      fertilizer.quantity = fertilizer.quantity - 1;
+      newQuantity = fertilizer.quantity - 1;
+      fertilizer.quantity = newQuantity;
     }
     return fertilizer;
   })
 
   writeFile(modified);
-  return res.send('ordered');
+  return res.send({id: req.body.id, quantity: newQuantity});
 }
 
 exports.getFertilizers = getFertilizers;
